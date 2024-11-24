@@ -1,10 +1,12 @@
 import React from 'react'
-import UseCheckOnline from '../customHooks/useOnlineHook/UseCheckOnline'
+import useCheckOnline from '../customHooks/useOnlineHook/useCheckOnline'
 
 const CheckOnlineStatus = () => {
+  const { isOnline } = useCheckOnline();
+  // console.log(isOnline);
   return (
     <div>
-      <UseCheckOnline/>
+      <h1>{isOnline ? '✅ Online' : '❌ Disconnected'}</h1>
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react'
 
-const UseCheckOnline = () => {
+const useCheckOnline = () => {
   const [isOnline, setIsOnline] = useState(true);
-  useEffect(() => {
 
+  useEffect(() => {
     function handleOnline() {
       setIsOnline(true);
     }
@@ -21,7 +21,7 @@ const UseCheckOnline = () => {
     }
   }, [])
 
-  return <h1>{isOnline ? '✅ Online' : '❌ Disconnected'}</h1>;
+  return {isOnline};
 }
 
-export default UseCheckOnline
+export default useCheckOnline

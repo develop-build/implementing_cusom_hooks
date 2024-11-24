@@ -3,7 +3,6 @@ import useFetch from '../customHooks/DataApiFetchingHook/useFetch'
 
 
 const DataFetchImpl = () => {
-  
   /* Implementing useFetch */
   const { data, loading, error } = useFetch('https://jsonplaceholder.typicode.com/todos');
   if (loading) return <div>Loading...</div>;
