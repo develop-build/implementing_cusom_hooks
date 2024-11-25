@@ -3,6 +3,7 @@ import DataFetchImpl from './HookImplementations/dataFetchImpl'
 import CheckOnlineStatusImpl from './HookImplementations/CheckOnlineStatusImpl'
 import UseStateCustomImpl from './HookImplementations/UseStateCustomImpl'
 import EventListenerImpl from './HookImplementations/EventListenerImpl'
+import UseDebounceEffectImpl from './HookImplementations/UseDebounceEffectImpl'
 
 const App = () => {
 
@@ -11,7 +12,8 @@ const App = () => {
       {/* <DataFetchImpl /> */}
       {/* <CheckOnlineStatusImpl /> */}
       {/* <UseStateCustomImpl/> */}
-      <EventListenerImpl/>
+      <EventListenerImpl />
+      <UseDebounceEffectImpl/>
     </>
   )
 }
